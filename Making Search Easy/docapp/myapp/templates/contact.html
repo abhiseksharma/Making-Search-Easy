@@ -1,0 +1,63 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>BreakDown</title>
+
+     <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet"  type="text/css" media="screen" href="{% static "contact.css" %}" />
+    <link rel="stylesheet"  type="text/css" media="screen" href="{% static "main.css" %}" />
+  </head>
+<body>
+  <section class = "main">
+    <div id="mySidenav" class="sidenav">
+          <a href="#" id="about">About</a>
+          <a href="/feed/" id="predict">Predict</a>
+          <a href="https://accounts.google.com/signin/v2/identifier?sacu=1&scc=1&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&osid=1&service=mail&ss=1&ltmpl=default&rm=false&flowName=GlifWebSignIn&flowEntry=ServiceLogin" id="gmail">Gmail</a>
+          <a href="#" id="call">Call</a>
+    </div>
+
+      <div class = "home">
+        <a href = "/main/" >BreakDown</a>
+        </div>
+
+    <div class="container">
+ <form action="/action_page.php">
+
+   <label for="fname"><b>First Name</b></label>
+   <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+   <label for="lname"><b>Last Name</label>
+   <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+   <label for="country"><b>Country</label>
+   <select id="country" name="country">
+     <option value="australia">Australia</option>
+     <option value="canada">Canada</option>
+     <option value="usa">India</option>
+   </select>
+
+   <label for="subject"><b>Subject</label>
+   <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+   <input type="submit" value="Submit">
+
+ </form>
+</div>
+
+
+
+    <div class = "footer">
+      <p class="text-center t">Created By: Team Breakdown</p>
+
+    </div>
+
+
+  </section>
+</body>
+</html>

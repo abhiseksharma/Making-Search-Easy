@@ -1,0 +1,175 @@
+*, body
+{
+  padding: 0;
+  margin: 0;
+ }
+
+body {
+  overflow: hidden;
+  font-family: sans-serif;
+ }
+/* section class css code*/
+.main
+{
+  background: url("sea-1209607_1920.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+/*header css start from here*/
+
+/* Style the links inside the sidenav */
+#mySidenav a {
+    position: absolute;; /* Position them relative to the browser window */
+    left: -80px; /* Position them outside of the screen */
+    transition: 0.3s; /* Add transition on hover */
+    padding: 15px; /* 15px padding */
+    width: 100px; /* Set a specific width */
+    text-decoration: none; /* Remove underline */
+    font-size: 20px; /* Increase font size */
+    color: white; /* White text color */
+    border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+}
+
+#mySidenav a:hover {
+    left: 0; /* On mouse-over, make the elements appear as they should */
+}
+
+/* The about link: 20px from the top with a green background */
+#about {
+    top: 20px;
+    background-color: #76d7c4 ;
+}
+
+#predict {
+    top: 80px;
+    background-color:  #5499c7; /* Blue */
+}
+
+#gmail {
+    top: 140px;
+    background-color: #f44336; /* Red */
+}
+
+#call {
+    top: 200px;
+    background-color: #555 /* Light Black */
+}
+/*header ends here*/
+
+/* name of search engine*/
+
+.name
+{
+  font-family: Apple Chancery, cursive;
+  background-color: transparent;
+  border: none;
+  border-bottom: 0px solid #969696;
+  color: #34495e;
+  text-align: center;
+  font-size: 50px;
+  padding: 120px 0px;
+}
+
+/* end name*/
+
+/* search box starts from here*/
+
+.search {
+  width: 50%;
+  position: absolute;
+  padding-left: 300px ;
+  color: white;
+}
+
+.searchTerm {
+  float:left;
+  width: 100%;
+  border: 3px solid  #34495e;
+  padding:5px;
+  height: 30px;
+  border-radius: 5px;
+  outline:none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color: #5d6d7e;
+}
+
+.searchButton
+{
+  position: absolute;
+  right: -50px;
+  width: 75px;
+  height: 46px;
+  border: 1px solid  #5d6d7e;
+  background:  light Blue ;
+  text-align: center;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap
+{
+  width: 50px;
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+
+
+/* search box ends from here*/
+
+.footer
+{
+padding-top: 270px;
+font-family: Apple Chancery, cursive;
+background-color: transparent;
+border: none;
+border-bottom: 0px solid #969696;
+color:  #fbfcfc;
+text-align: center;
+font-size: 25px;
+
+
+}
+
+
+/* link of search*/
+a:link
+{
+  /* Applies to all unvisited links */
+  text-decoration: none;
+  font-weight:      bold;
+  background-color: transparent;
+  color:            white;
+  }
+a:visited {
+  /* Applies to all visited links */
+  text-decoration:  none;
+  font-weight:      bold;
+  background-color: transparent;
+  color:            #34495e;
+  }
+a:hover   {
+  /* Applies to links under the pointer */
+  text-decoration:  none;
+  font-weight:      bold;
+    background-color: transparent;
+  color:           #34495e;
+  }
+a:active  {
+  /* Applies to activated links */
+  text-decoration: none;
+  font-weight:      bold;
+    background-color: transparent;
+  color: #34495e;
+  }
+/* end */
